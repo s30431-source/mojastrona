@@ -1,0 +1,42 @@
+/* 
+   style_mobile.css - Mobile styles (max-width: 500px)
+   
+   Only rules that OVERRIDE the desktop stylesheet.
+   Desktop styles work on mobile by default - we only change what needs to adapt.
+*/
+
+/* Task 5.1 - Hide the icon links section in the header */
+#links {
+	display: none;
+}
+
+/* Task 5.2 - Widen containers to full screen width */
+#container {
+	width: 100%;
+}
+
+#lewakolumna {
+	width: 100%;
+}
+
+#prawakolumna {
+	width: 100%;
+}
+
+/* Task 5.3 - Increase font size for readability on small screens */
+body {
+	font-size: 15px;
+}
+
+/* Task 5.4 - Make the content image full width */
+#zdjecie {
+	width: 100%;
+	max-width: 100%;
+	float: none;
+	margin: 0 0 10px 0;
+}
+
+/* Task 5.5 - Change Flexbox direction from row to column for mobile layout */
+#tresc {
+	flex-direction: column;
+}

@@ -1,0 +1,161 @@
+/* 
+   style_desktop.css - Desktop styles for the website
+   
+   CSS syntax reminder:
+   - tag selectors: body { ... }
+   - ID selectors: #naglowek { ... }
+   - class selectors: .naglowek { ... }
+   - cascading: #parent .child { ... }
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #117EAE;
+	background-image: url("../obrazy/tlobg.gif");
+	background-repeat: repeat-x;
+	color: #555555;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding-bottom: 2em;
+	line-height: 1.2em;
+}
+
+/* === LAYOUT === */
+
+#container {
+	margin: 0 auto;
+	width: 930px;
+}
+
+/* === HEADER === */
+
+#naglowek {
+	/* Task 2 step 5 TODO: flexbox for header
+	   - display: flex to activate flexible mode
+	   - justify-content: space-between to push logo and links to opposite ends
+	   - align-items: center to center them vertically
+	*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 65px;
+	padding: 10px 20px;
+	color: #f6f6f6;
+}
+
+#naglowek #logo img {
+	display: block;
+}
+
+#naglowek #links {
+	width: 50%;
+}
+
+#naglowek #links ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#naglowek #links img {
+	height: 45px;
+	display: block;
+}
+
+/* === CONTENT AREA === */
+
+#tresc {
+	display: flex;
+	background: url("../obrazy/white_wall.png");
+	min-height: 400px;
+}
+
+#lewakolumna {
+	width: 240px;
+	flex-shrink: 0;
+	padding: 20px 0;
+}
+
+/* === NAVIGATION MENU === */
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 10px 0 15px;
+}
+
+#menu a {
+	background: url("../obrazy/strzalka.gif") no-repeat 0 10px;
+	border-bottom: 1px dotted #aaaaaa;
+	color: #4d4d4d;
+	display: block;
+	font-weight: bold;
+	padding: 5px 3px 5px 16px;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #117EAE;
+}
+
+#menu #active {
+	color: red;
+}
+
+/* === RIGHT COLUMN (MAIN CONTENT) === */
+
+#prawakolumna {
+	flex: 1;
+	padding: 10px 20px;
+}
+
+/* === BREADCRUMB NAVIGATION === */
+
+#crunch {
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+
+#crunch a {
+	color: #4d4d4d;
+	text-decoration: none;
+}
+
+/* === CONTENT IMAGE === */
+
+#zdjecie {
+    float: right;
+	padding: 10px;
+	border: 2px solid #dddddd;
+	margin: 10px;
+	background: white;
+	max-width: 266px;
+}
+
+/* === FOOTER === */
+
+#stopka {
+	margin-top: 10px;
+	text-align: center;
+	padding: 8px;
+	background: url("../obrazy/white_wall.png");
+	color: #555555;
+}
+
+#stopka p {
+	margin: 0;
+	padding: 0;
+}
