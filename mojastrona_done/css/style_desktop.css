@@ -1,13 +1,3 @@
-/* 
-   style_desktop.css - Desktop styles for the website
-   
-   CSS syntax reminder:
-   - tag selectors: body { ... }
-   - ID selectors: #naglowek { ... }
-   - class selectors: .naglowek { ... }
-   - cascading: #parent .child { ... }
-*/
-
 *,
 *::before,
 *::after {
@@ -29,22 +19,11 @@ p {
 	padding-bottom: 2em;
 	line-height: 1.2em;
 }
-
-/* === LAYOUT === */
-
 #container {
 	margin: 0 auto;
 	width: 930px;
 }
-
-/* === HEADER === */
-
 #naglowek {
-	/* Task 2 step 5 TODO: flexbox for header
-	   - display: flex to activate flexible mode
-	   - justify-content: space-between to push logo and links to opposite ends
-	   - align-items: center to center them vertically
-	*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -74,9 +53,6 @@ p {
 	height: 45px;
 	display: block;
 }
-
-/* === CONTENT AREA === */
-
 #tresc {
 	display: flex;
 	background: url("../obrazy/white_wall.png");
@@ -88,9 +64,6 @@ p {
 	flex-shrink: 0;
 	padding: 20px 0;
 }
-
-/* === NAVIGATION MENU === */
-
 #menu ul {
 	list-style: none;
 	margin: 0;
@@ -114,16 +87,10 @@ p {
 #menu #active {
 	color: red;
 }
-
-/* === RIGHT COLUMN (MAIN CONTENT) === */
-
 #prawakolumna {
 	flex: 1;
 	padding: 10px 20px;
 }
-
-/* === BREADCRUMB NAVIGATION === */
-
 #crunch {
 	margin-bottom: 10px;
 	padding: 10px 0;
@@ -133,9 +100,6 @@ p {
 	color: #4d4d4d;
 	text-decoration: none;
 }
-
-/* === CONTENT IMAGE === */
-
 #zdjecie {
     float: right;
 	padding: 10px;
@@ -144,9 +108,6 @@ p {
 	background: white;
 	max-width: 266px;
 }
-
-/* === FOOTER === */
-
 #stopka {
 	margin-top: 10px;
 	text-align: center;
@@ -154,7 +115,6 @@ p {
 	background: url("../obrazy/white_wall.png");
 	color: #555555;
 }
-
 #stopka p {
 	margin: 0;
 	padding: 0;
